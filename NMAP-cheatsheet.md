@@ -222,15 +222,18 @@ Port 80 by default|
 
 
 
-# --------------------------------------------------------------
-# ⚠️ Disclaimer & Usage Notice
-# This cheat sheet is for educational and authorized testing
-# purposes ONLY. Unauthorized scanning is illegal and may lead
-# to serious legal consequences. Always obtain proper consent
-# before using Nmap or any network scanning tools.
-#
-# ✅ Best Practices:
-# - Use Nmap in lab environments or with explicit permission.
-# - Respect all network policies and legal regulations.
-# - Keep Nmap up-to-date: nmap --version
-# --------------------------------------------------------------
+/***************************************************************
+ 🔒 DISCLAIMER & USAGE NOTICE 🔒
+---------------------------------------------------------------
+This cheat sheet is intended for EDUCATIONAL and AUTHORIZED USE ONLY.
+
+⚠️ Unauthorized network scanning is ILLEGAL and may result in 
+   legal consequences. Always have proper permission.
+
+✅ Best Practices:
+ - Use in lab or explicitly authorized environments.
+ - Follow all local laws and organizational policies.
+ - Stay updated: nmap --version
+ 
+***************************************************************/
+
