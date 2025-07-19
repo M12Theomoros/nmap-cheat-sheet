@@ -223,6 +223,7 @@ Port 80 by default|
 
 
 /***************************************************************
+
  🔒 DISCLAIMER & USAGE NOTICE 🔒
 ---------------------------------------------------------------
 This cheat sheet is intended for EDUCATIONAL and AUTHORIZED USE ONLY.
@@ -234,6 +235,6 @@ This cheat sheet is intended for EDUCATIONAL and AUTHORIZED USE ONLY.
  - Use in lab or explicitly authorized environments.
  - Follow all local laws and organizational policies.
  - Stay updated: nmap --version
- 
+
 ***************************************************************/
 
