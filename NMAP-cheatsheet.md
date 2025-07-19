@@ -1,7 +1,7 @@
 # Nmap Cheat Sheet
 ================
 
-# Target Specification
+## Target Specification
 ---------------------------------------------------
 
 | Switch | Example | Description |
@@ -16,7 +16,7 @@
 |  --exclude |  nmap --exclude 192.168.1.1 |  Exclude listed hosts
 
 
-# Scan Techniques
+## Scan Techniques
 ---------------
 
 | Switch | Example | Description  |
@@ -29,7 +29,7 @@
 |  -sM |  nmap 192.168.1.1 -sM |  TCP Maimon port scan
 
 
-# Host Discovery
+## Host Discovery
 --------------
 
 | Switch | Example | Description  |
@@ -44,7 +44,7 @@ Port 80 by default|
 |  -n |  nmap 192.168.1.1 -n |  Never do DNS resolution
 
 
-# Port Specification
+## Port Specification
 ------------------
 
 | Switch | Example | Description  |
@@ -61,7 +61,7 @@ Port 80 by default|
 
 
 
-# Service and Version Detection
+## Service and Version Detection
 -----------------------------
 
 
@@ -74,7 +74,7 @@ Port 80 by default|
 |  -A |  nmap 192.168.1.1 -A |  Enables OS detection, version detection, script scanning, and traceroute
 
 
-# OS Detection
+## OS Detection
 ------------
 
 
@@ -87,7 +87,7 @@ Port 80 by default|
 |  -A |  nmap 192.168.1.1 -A |  Enables OS detection, version detection, script scanning, and traceroute
 
 
-# Timing and Performance
+## Timing and Performance
 ----------------------
 
 
@@ -114,7 +114,7 @@ Port 80 by default|
 |  --max-rate &lt;number&gt; |  100 |  Send packets no faster than &lt;number&gt; per second
 
 
-# NSE Scripts
+## NSE Scripts
 -----------
 
 
@@ -129,7 +129,7 @@ Port 80 by default|
 |  --script-args |  nmap --script snmp-sysdescr --script-args snmpcommunity=admin 192.168.1.1 |  NSE script with arguments |
 
 
-# Useful NSE Script Examples
+## Useful NSE Script Examples
 
 
 | Command | Description  |
@@ -143,7 +143,7 @@ Port 80 by default|
 |  nmap -p80 --script http-sql-injection scanme.nmap.org |  Check for SQL injections
 
 
-# Firewall / IDS Evasion and Spoofing
+## Firewall / IDS Evasion and Spoofing
 -----------------------------------
 
 
@@ -160,12 +160,12 @@ Port 80 by default|
 |  --data-length |  nmap --data-length 200 192.168.1.1 |  Appends random data to sent packets
 
 
-## Example IDS Evasion command
+### Example IDS Evasion command
 
     nmap -f -t 0 -n -Pn –data-length 200 -D 192.168.1.101,192.168.1.102,192.168.1.103,192.168.1.23 192.168.1.1
 
 
-# Output
+## Output
 ------
 
 | Switch | Example | Description  |
@@ -185,7 +185,7 @@ Port 80 by default|
 |  --resume |  nmap --resume results.file |  Resume a scan
 
 
-# Helpful Nmap Output examples
+## Helpful Nmap Output examples
 
 
 
@@ -199,7 +199,7 @@ Port 80 by default|
 |  grep &quot; open &quot; results.nmap | sed -r 's/ +/ /g' | sort | uniq -c | sort -rn | less |  Reverse sorted list of how often ports turn up
 
 
-# Miscellaneous Options
+## Miscellaneous Options
 ---------------------
 
 | Switch | Example | Description  |
@@ -208,7 +208,7 @@ Port 80 by default|
 |  -h |  nmap -h |  nmap help screen |
 
 
-# Other Useful Nmap Commands
+## Other Useful Nmap Commands
 --------------------------
 
 
@@ -219,3 +219,18 @@ Port 80 by default|
 |  nmap 192.168.1.1-1/24 -PR -sn -vv |  Arp discovery only on local network, no port scan |
 |  nmap -iR 10 -sn -traceroute |  Traceroute to random targets, no port scan
 |  nmap 192.168.1.1-50 -sL --dns-server 192.168.1.1 |  Query the Internal DNS for hosts, list targets only
+
+
+
+# --------------------------------------------------------------
+# ⚠️ Disclaimer & Usage Notice
+# This cheat sheet is for educational and authorized testing
+# purposes ONLY. Unauthorized scanning is illegal and may lead
+# to serious legal consequences. Always obtain proper consent
+# before using Nmap or any network scanning tools.
+#
+# ✅ Best Practices:
+# - Use Nmap in lab environments or with explicit permission.
+# - Respect all network policies and legal regulations.
+# - Keep Nmap up-to-date: nmap --version
+# --------------------------------------------------------------
